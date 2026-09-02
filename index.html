@@ -72,9 +72,7 @@
             <a href="https://github.com/viveksingh013/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
             <a href="https://www.linkedin.com/in/viveksingh013/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
             <a class="icon-leetcode" href="https://leetcode.com/u/viveksingh013/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.96 5.232 5.232 0 0 0 .5 3.58 5.266 5.266 0 0 0 2.378 1.879l.296.083c.877.25 1.792.382 2.66.331l4.995-.337c.7-.047 1.354.15 1.878.557a3.432 3.432 0 0 1 1.034 1.08c.95 1.515.463 4.04-1.07 5.577l-2.682 2.677.053.051a1.375 1.375 0 0 1-1.943 1.94l-6.309-6.284a1.375 1.375 0 0 1 .038-1.982c.537-.514 1.37-.513 1.91.016l4.557 4.539 2.791-2.787c.77-.77.902-2.02.139-3.191a1.68 1.68 0 0 0-.5-.535c-.258-.2-.56-.294-.857-.274l-4.995.337c-1.312.08-2.659-.085-3.939-.48a6.988 6.988 0 0 1-3.287-2.591 6.852 6.852 0 0 1-.65-4.678 6.86 6.86 0 0 1 1.564-3.85l3.793-4.064A8.3 8.3 0 0 1 10.66 0h2.823zm.88 14.137a1.37 1.37 0 0 0-1.94 0 1.37 1.37 0 0 0 0 1.94l4.796 4.787 1.941-1.93-4.796-4.797z"/>
-              </svg>
+              <span class="code-icon">&lt;&gt;</span>
             </a>
             <a href="mailto:viveksingh956038@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
           </div>
@@ -140,22 +138,40 @@
         <ol class="timeline">
           <li class="timeline__item reveal">
             <div class="timeline__meta">
-              <span class="pill">Jan 2026 — Present</span>
+              <span class="pill">Jul 2026 — Present</span>
               <span class="timeline__place">Noida</span>
             </div>
             <div class="timeline__card">
               <h3>Software Engineer — Backend</h3>
-              <p class="timeline__org">Paytm <em>promoted from intern</em></p>
+              <p class="timeline__org">Paytm
               <ul>
-                <li>Own Java / Spring Boot microservices for merchant onboarding — validation, workflows, and the boring reliability bits.</li>
-                <li>Built the Maker–Checker approval service: configurable multi-level approvals and plugin-based validation.</li>
-                <li>Raised unit + integration coverage from <strong>32% to 91%</strong>, then used that confidence in prod.</li>
-                <li>Designed onboarding flows across dev, test, UAT, and production for different merchant use cases.</li>
-                <li>Chased production issues across services, logs, and DB state — then shipped fixes that stuck.</li>
-                <li>Helped Payment Link (P4B) onboarding and the monolith → microservices split: REST APIs and clearer service boundaries.</li>
+                <li>Owned the Maker–Checker approval microservice for merchant onboarding, implementing configurable multi-level approval workflows and plugin-based validation logic.</li>
+                <li>Migrated static configuration from database tables to YAML-based configuration, removing redundant DB dependencies and enabling AI agents to directly manage configuration through the repository, with functional accuracy validated across onboarding workflows.</li>
+                <li>Dockerized the Maker–Checker microservice with mocked upstream and downstream dependencies, enabling the complete service stack to run locally with isolated external dependencies.</li>
+                <li>Improved unit and integration test coverage from <strong>32% to 91%</strong>, strengthening reliability and reducing regression risk across production services.</li>
+                <li>Designed and configured end-to-end merchant onboarding workflows across development, testing, UAT, and production environments for diverse onboarding use cases.</li>
+                <li>Investigated and resolved production issues across distributed microservices by tracing requests, analyzing logs, validating database state, and implementing backend fixes.</li>
               </ul>
               <div class="tags">
-                <span>Java</span><span>Spring Boot</span><span>Microservices</span><span>REST</span><span>Testing</span>
+                <span>Java</span><span>Spring Boot</span><span>Microservices</span><span>REST</span><span>Docker</span><span>YAML</span><span>Testing</span>
+              </div>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="pill">Jan 2026 — Jul 2026</span>
+              <span class="timeline__place">Noida</span>
+            </div>
+            <div class="timeline__card">
+              <h3>Software Engineer Intern — Backend</h3>
+              <p class="timeline__org">Paytm</p>
+              <ul>
+                <li>Developed Java and Spring Boot backend services for Paytm’s merchant onboarding platform, implementing business validations and REST APIs across onboarding workflows.</li>
+                <li>Contributed to the Payment Link (P4B) onboarding feature and migration of onboarding services from a monolithic application to microservices.</li>
+                <li>Debugged and resolved backend issues by analyzing application logs, database state, and distributed service interactions, contributing to reliable production releases.</li>
+              </ul>
+              <div class="tags">
+                <span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Microservices</span><span>SQL</span>
               </div>
             </div>
           </li>
@@ -166,13 +182,13 @@
             </div>
             <div class="timeline__card">
               <h3>Software Development Intern</h3>
-              <p class="timeline__org">Tech Mahindra · Verizon Visible</p>
+              <p class="timeline__org">Tech Mahindra</p>
               <ul>
                 <li>Supported CRM-driven telecom workflows in SLA-bound production systems.</li>
-                <li>Debugged orchestration failures by replaying REST APIs in Postman and reading Splunk logs.</li>
-                <li>Worked BDP incident tickets from real-time monitoring with a 15-minute response SLA.</li>
-                <li>Lived in Salesforce security: OWD, role hierarchy, sharing rules, profiles, permission sets.</li>
-                <li>Touched enterprise integrations — Matrixx, SAP, MTAS, Apigee.</li>
+                <li>Debugged orchestration failures by replaying REST APIs using Postman and analyzing logs via Splunk.</li>
+                <li>Investigated BDP incident tickets triggered by real-time monitoring, ensuring adherence to <strong>15-minute SLA</strong> response timelines.</li>
+                <li>Worked with Salesforce security models including OWD, Role Hierarchy, Sharing Rules, Profiles, and Permission Sets.</li>
+                <li>Gained exposure to enterprise integrations including Matrixx, SAP, MTAS, and Apigee.</li>
               </ul>
               <div class="tags">
                 <span>Postman</span><span>Splunk</span><span>Salesforce</span><span>Jira</span><span>SLA</span>
@@ -306,14 +322,22 @@
           </a>
         </div>
         <div class="certs reveal">
-          <p><strong>AWS</strong> — Architecting on AWS (Mar 2026): VPC, EC2, LB, Auto Scaling, ECS/EKS</p>
+          <p>
+            <strong>AWS</strong> —
+            <a href="https://drive.google.com/file/d/1Bp5b2vRSe0qS1ZTmjAKAe518uunWFnv0/view?usp=sharing" target="_blank" rel="noopener noreferrer">Architecting on AWS (Mar 2026) VPC, EC2, LB, Auto Scaling, ECS/EKS</a>:
+          </p>
+        
           <p>
             <strong>NPTEL</strong> —
-            <a href="https://drive.google.com/file/d/1G5_rd4W6CIIZVI7Jnm9m8NO9JOHZ3LLm/view" target="_blank" rel="noopener noreferrer">Joy of Computing using Python, 94%</a>
+            <a href="https://drive.google.com/file/d/1G5_rd4W6CIIZVI7Jnm9m8NO9JOHZ3LLm/view" target="_blank" rel="noopener noreferrer">Joy of Computing using Python, 94% &</a>
             ·
             <a href="https://drive.google.com/file/d/1kiDgcHEMzBbp3w-tCL-pSmKGy0-e6MwI/view?usp=sharing" target="_blank" rel="noopener noreferrer">Internet of Things, 96%</a>
           </p>
-          <p><strong>Desh Ke Mentor</strong> — mentored school students for Govt. of NCT of Delhi.</p>
+        
+          <p>
+            <strong>Desh Ke Mentor</strong> —
+            <a href="https://drive.google.com/file/d/1tds60Z06-rLk2GFiyQeqmI2Fvfx5-maY/view?usp=sharing" target="_blank" rel="noopener noreferrer">Mentored school students for Govt. of NCT of Delhi.</a>
+          </p>
         </div>
       </div>
     </section>
@@ -326,7 +350,6 @@
           <p class="reveal">Noida / Delhi. Open to hard backend work, interesting systems, and people who read logs before guessing.</p>
           <div class="contact__chips reveal">
             <a href="mailto:viveksingh956038@gmail.com">viveksingh956038@gmail.com</a>
-            <a href="tel:+918595520114">+91 85955 20114</a>
             <button type="button" class="copy-btn" id="copy-email">Copy email</button>
           </div>
         </div>
